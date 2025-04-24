@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 2rem;
+    color: #444;
+}
+
+.options {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.options label {
+    text-align: center;
+    cursor: pointer;
+}
+
+.options img {
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.options input[type="radio"]:checked + img {
+    border-color: #007BFF;
+}
+
+select, button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 2rem;
+    background-color: #e6f7ff;
+    padding: 1rem;
+    border: 1px solid #b3e0ff;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
